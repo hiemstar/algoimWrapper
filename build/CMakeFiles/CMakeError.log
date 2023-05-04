@@ -1,0 +1,90 @@
+Determining if the function sgemm_ exists failed with the following output:
+Change Dir: /home/rene/cpp-projects/algoimWrapper/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_2341f && [1/2] Building C object CMakeFiles/cmTC_2341f.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_2341f
+FAILED: cmTC_2341f 
+: && /bin/x86_64-linux-gnu-gcc-11 -DCHECK_FUNCTION_EXISTS=sgemm_ -rdynamic CMakeFiles/cmTC_2341f.dir/CheckFunctionExists.c.o -o cmTC_2341f   && :
+/usr/bin/ld: CMakeFiles/cmTC_2341f.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `sgemm_'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/rene/cpp-projects/algoimWrapper/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_e08c6 && [1/2] Building C object CMakeFiles/cmTC_e08c6.dir/src.c.o
+[2/2] Linking C executable cmTC_e08c6
+FAILED: cmTC_e08c6 
+: && /bin/x86_64-linux-gnu-gcc-11 -DCMAKE_HAVE_LIBC_PTHREAD -rdynamic CMakeFiles/cmTC_e08c6.dir/src.c.o -o cmTC_e08c6   && :
+/usr/bin/ld: CMakeFiles/cmTC_e08c6.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x5e): undefined reference to `pthread_cancel'
+/usr/bin/ld: src.c:(.text+0x6f): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/rene/cpp-projects/algoimWrapper/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_c1346 && [1/2] Building C object CMakeFiles/cmTC_c1346.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_c1346
+FAILED: cmTC_c1346 
+: && /bin/x86_64-linux-gnu-gcc-11 -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_c1346.dir/CheckFunctionExists.c.o -o cmTC_c1346  -lpthreads && :
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function cheev_ exists failed with the following output:
+Change Dir: /home/rene/cpp-projects/algoimWrapper/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_aa4be && [1/2] Building C object CMakeFiles/cmTC_aa4be.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_aa4be
+FAILED: cmTC_aa4be 
+: && /bin/x86_64-linux-gnu-gcc-11 -DCHECK_FUNCTION_EXISTS=cheev_  CMakeFiles/cmTC_aa4be.dir/CheckFunctionExists.c.o -o cmTC_aa4be  /usr/lib/x86_64-linux-gnu/libblas.so  -lpthread  -lm  -ldl && :
+/usr/bin/ld: CMakeFiles/cmTC_aa4be.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `cheev_'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function cheev_ exists failed with the following output:
+Change Dir: /home/rene/cpp-projects/algoimWrapper/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_f64c4 && [1/2] Building C object CMakeFiles/cmTC_f64c4.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_f64c4
+FAILED: cmTC_f64c4 
+: && /bin/x86_64-linux-gnu-gcc-11 -DCHECK_FUNCTION_EXISTS=cheev_  CMakeFiles/cmTC_f64c4.dir/CheckFunctionExists.c.o -o cmTC_f64c4  /usr/lib/x86_64-linux-gnu/liblapack.so  /usr/lib/x86_64-linux-gnu/libblas.so  -fortranlibs && :
+x86_64-linux-gnu-gcc-11: error: unrecognized command-line option ‘-fortranlibs’
+ninja: build stopped: subcommand failed.
+
+
+

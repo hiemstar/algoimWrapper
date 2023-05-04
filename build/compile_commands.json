@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/rene/cpp-projects/algoimWrapper/build",
+  "command": "/bin/x86_64-linux-gnu-g++-11 -DJULIA_ENABLE_THREADING -Dalgoimwrapper_EXPORTS -I/home/rene/cpp-projects/algoimWrapper -isystem /home/rene/cpp-projects/libcxxwrap-julia/include -isystem /opt/julia-1.8.5/include/julia  --std=c++17 -W -Wall -O3 -DNDEBUG -g -fPIC -o CMakeFiles/algoimwrapper.dir/src/algoimwrapper.cpp.o -c /home/rene/cpp-projects/algoimWrapper/src/algoimwrapper.cpp",
+  "file": "/home/rene/cpp-projects/algoimWrapper/src/algoimwrapper.cpp"
+}
+]

@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/rene/cpp-projects/algoimWrapper/ext/algoim-subbuild/CMakeFiles/algoim-populate"
+		},
+		{
+			"file" : "/home/rene/cpp-projects/algoimWrapper/ext/algoim-subbuild/CMakeFiles/algoim-populate.rule"
+		},
+		{
+			"file" : "/home/rene/cpp-projects/algoimWrapper/ext/algoim-subbuild/CMakeFiles/algoim-populate-complete.rule"
+		},
+		{
+			"file" : "/home/rene/cpp-projects/algoimWrapper/ext/algoim-subbuild/algoim-populate-prefix/src/algoim-populate-stamp/algoim-populate-build.rule"
+		},
+		{
+			"file" : "/home/rene/cpp-projects/algoimWrapper/ext/algoim-subbuild/algoim-populate-prefix/src/algoim-populate-stamp/algoim-populate-configure.rule"
+		},
+		{
+			"file" : "/home/rene/cpp-projects/algoimWrapper/ext/algoim-subbuild/algoim-populate-prefix/src/algoim-populate-stamp/algoim-populate-download.rule"
+		},
+		{
+			"file" : "/home/rene/cpp-projects/algoimWrapper/ext/algoim-subbuild/algoim-populate-prefix/src/algoim-populate-stamp/algoim-populate-install.rule"
+		},
+		{
+			"file" : "/home/rene/cpp-projects/algoimWrapper/ext/algoim-subbuild/algoim-populate-prefix/src/algoim-populate-stamp/algoim-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/rene/cpp-projects/algoimWrapper/ext/algoim-subbuild/algoim-populate-prefix/src/algoim-populate-stamp/algoim-populate-patch.rule"
+		},
+		{
+			"file" : "/home/rene/cpp-projects/algoimWrapper/ext/algoim-subbuild/algoim-populate-prefix/src/algoim-populate-stamp/algoim-populate-test.rule"
+		},
+		{
+			"file" : "/home/rene/cpp-projects/algoimWrapper/ext/algoim-subbuild/algoim-populate-prefix/src/algoim-populate-stamp/algoim-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"algoim-populate"
+		],
+		"name" : "algoim-populate"
+	}
+}

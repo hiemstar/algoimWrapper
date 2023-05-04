@@ -10,6 +10,7 @@
 #include "algoim/quadrature_general.hpp"
 #include "algoim/quadrature_multipoly.hpp"
 
+
 using namespace algoim;
 
 struct LevelSetFunction {};
